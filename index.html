@@ -488,8 +488,6 @@ pre {
         </div>
     </section>
     <section id="method"/>
-        <!-- <hr> -->
-        <!-- <h2>Fast Imitation of Skills from Humans (FISH)</h2> -->
 
         <br><br>
         <center>
@@ -547,20 +545,41 @@ pre {
 
         <br><br>
         <h2>Real World Rollouts</h2>
-        Utilizing BAKU, we execute a <strong><span style="color: green;">total of 30 tasks</span></strong> across 
+        Utilizing BAKU, we execute a <strong><span style="color: green;">total of 30 tasks</span></strong> on our xArm multi-task kitchen environment.
+        All task rollouts are executed at 1X speed.
         <br>
         <h3> Rollouts</h3>
         <label for="video-select1">Task:</label>
         <select id="video-select1" onchange="displayVideo1()">
-            <option value="mfiles/videos/franka allegro/pick_basket_8x.mp4">Pack and Lift a Basket (8X)</option>
-            <option value="mfiles/videos/franka allegro/muffin_in_oven.mp4">Put Muffin in the Oven (8X)</option>
-            <option value="mfiles/videos/franka allegro/pick_tea_sachet_1x.mp4">Pick Up Tea Satchet (1X)</option>
-            <option value="mfiles/videos/franka allegro/box_open_2x.mp4">Open Box (2X)</option>
-            <option value="mfiles/videos/franka allegro/unlatch_box_open_4x.mp4">Undo Latch and Open Box (4X)</option>
-            <option value="mfiles/videos/franka allegro/slot_battery_2x.mp4">Slot Battery (2X)</option>
-            <option value="mfiles/videos/franka allegro/grasp_and_twist_2x.mp4">Grasp Object and Twist (2X)</option>
-            <option value="mfiles/videos/franka allegro/grasp sponge_2x.mp4">Grasp Sponge (2X)</option>
-            <option value="mfiles/videos/franka allegro/shell_game_8x.mp4">Shell Game (8X)</option>
+            <option value="mfiles/videos/close_oven_door.mp4">close oven door</option>
+            <option value="mfiles/videos/open_oven_door.mp4">open oven door</option>
+            <option value="mfiles/videos/fetch_glass_from_rack.mp4">fetch glass from rack</option>
+            <option value="mfiles/videos/fetch_tea_from_rack.mp4">fetch tea from rack</option>
+            <option value="mfiles/videos/fetch_towel_from_rack.mp4">fetch towel from rack</option>
+            <option value="mfiles/videos/fetch_vitamin_bottle_from_rack.mp4">fetch vitamin bottle from rack</option>
+            <option value="mfiles/videos/fridge_fetch_knife_from_organizer.mp4">fetch knife from organizer</option>
+            <option value="mfiles/videos/fridge_put_ketchup_bottle_inside.mp4">put ketchup bottle inside the fridge</option>
+            <option value="mfiles/videos/fridge_put_tea_in_door.mp4">fetch knife from organizer</option>
+            <option value="mfiles/videos/fridge_put_tomato_can_inside.mp4">fetch knife from organizer</option>
+            <option value="mfiles/videos/fridge_put_yoghurt_in_door.mp4">fetch knife from organizer</option>
+            <option value="mfiles/videos/fridge_take_tea_out_from_door.mp4">fetch knife from organizer</option>
+            <option value="mfiles/videos/fridge_take_tomato_can_out.mp4">fetch knife from organizer</option>
+            <option value="mfiles/videos/fridge_take_vitamin_water_out.mp4">fetch knife from organizer</option>
+            <option value="mfiles/videos/fridge_take_yoghurt_out_from_door.mp4">fetch knife from organizer</option>
+            <option value="mfiles/videos/lift_pan_lid.mp4">lift pan lid</option>
+            <option value="mfiles/videos/pick_blue_plate.mp4">pick blue plate</option>
+            <option value="mfiles/videos/pick_white_plate.mp4">pick white plate</option>
+            <option value="mfiles/videos/pick_black_plate.mp4">pick black plate</option>
+            <option value="mfiles/videos/pick_blue_mug.mp4">pick blue mug</option>
+            <option value="mfiles/videos/pick_light_blue_bowl.mp4">pick light blue bowl</option>
+            <option value="mfiles/videos/pick_coffee_bag.mp4">pick coffee bag</option>
+            <option value="mfiles/videos/pick_starch_box.mp4">pick starch box</option>
+            <option value="mfiles/videos/pick_orange_from_bowl.mp4">pick orange from bowl</option>
+            <option value="mfiles/videos/place_glass_on_rack.mp4">place glass on rack</option>
+            <option value="mfiles/videos/put_coke_can_in_basket.mp4">put coke can in basket</option>
+            <option value="mfiles/videos/put_cream_cheese_in_basket.mp4">put cream cheese in fridge</option>
+            <option value="mfiles/videos/put_orange_into_bowl.mp4">put orange into bowl</option>
+            <option value="mfiles/videos/put_pear_into_bowl.mp4">put pear into bowl</option>
             </select>
 
         <div id="video-container">
