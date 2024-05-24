@@ -515,6 +515,12 @@ pre {
     <section>
         <hr>
         <h2>Proposed Architecture</h2>
+        <p>
+            BAKU is broken down into modality-specific sensory encoders, an observation trunk, and an action head 
+            predicting a chunk of actions. BAKU takes as input observations from multiple camera views, robot 
+            proprioceptive state and a task instruction and enables performing closed-loop control at 10Hz in our 
+            real world experiments on the xArm.
+        </p>
         <br><br>
         <center>
             <div class="mx-auto">
@@ -525,6 +531,9 @@ pre {
 
         <hr>
         <h2>Simulated environments</h2>
+        <p>
+            BAKU is evaluated on 3 simulated benchmarks - LIBERO, Meta-World, and DM Control Suite.
+        </p>
         <br><br>
         <center>
             <div class="mx-auto">
@@ -535,6 +544,12 @@ pre {
 
         <hr>
         <h2>Multi-task Performance</h2>
+        <p>
+            BAKU is evaluated on 129 tasks across 3 simulated benchmarks - LIBERO, Meta-World, and DM Control Suite. 
+            BAKU achieves an overall 18% absolute improvement over RT-1 and MT-ACT, with a 36% absolute improvement 
+            on the harder LIBERO benchmark. On our real-world xArm multi-task kitchen environment on 30 tasks, 
+            BAKU achieves a 91% success rate, outperforming the strongest baseline by 35%.
+        </p>
         <br><br>
         <center>
             <div class="mx-auto">
@@ -543,7 +558,7 @@ pre {
         </center>
         <br><br>
 
-        <br><br>
+        <hr>
         <h2>Real World Rollouts</h2>
         Utilizing BAKU, we execute a <strong><span style="color: green;">total of 30 tasks</span></strong> on our xArm multi-task kitchen environment.
         All task rollouts are executed at 1X speed.
@@ -565,21 +580,22 @@ pre {
             <option value="mfiles/videos/fridge_take_tea_out_from_door.mp4">fetch tea from the door of the fridge</option>
             <option value="mfiles/videos/fridge_take_yoghurt_out_from_door.mp4">fetch yoghurt from the door of the fridge</option>
             <option value="mfiles/videos/fridge_take_tomato_can_out.mp4">fetch tomato can from inside the fridge</option>
-            <option value="mfiles/videos/fridge_take_vitamin_water_out.mp4">fetch tomato can from inside the fridge</option>
+            <option value="mfiles/videos/fridge_take_vitamin_water_out.mp4">fetch water bottle from inside the fridge</option>
             <option value="mfiles/videos/lift_pan_lid.mp4">lift pan lid</option>
             <option value="mfiles/videos/pick_blue_plate.mp4">pick blue plate</option>
             <option value="mfiles/videos/pick_white_plate.mp4">pick white plate</option>
             <option value="mfiles/videos/pick_black_plate.mp4">pick black plate</option>
             <option value="mfiles/videos/pick_blue_mug.mp4">pick blue mug</option>
             <option value="mfiles/videos/pick_light_blue_bowl.mp4">pick light blue bowl</option>
+            <option value="mfiles/videos/pick_orange_from_bowl.mp4">pick orange from bowl</option>
             <option value="mfiles/videos/pick_coffee_bag.mp4">pick coffee bag</option>
             <option value="mfiles/videos/pick_starch_box.mp4">pick starch box</option>
-            <option value="mfiles/videos/pick_orange_from_bowl.mp4">pick orange from bowl</option>
             <option value="mfiles/videos/place_glass_on_rack.mp4">place glass on rack</option>
             <option value="mfiles/videos/put_coke_can_in_basket.mp4">put coke can in basket</option>
-            <option value="mfiles/videos/put_cream_cheese_in_basket.mp4">put cream cheese in fridge</option>
+            <option value="mfiles/videos/put_cream_cheese_in_basket.mp4">put cream cheese in basket</option>
             <option value="mfiles/videos/put_orange_into_bowl.mp4">put orange into bowl</option>
             <option value="mfiles/videos/put_pear_into_bowl.mp4">put pear into bowl</option>
+            <option value="mfiles/videos/wipe_towel.mp4">wipe towel</option>
             </select>
 
         <div id="video-container">
